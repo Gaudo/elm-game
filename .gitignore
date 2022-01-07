@@ -1,4 +1,15 @@
 # elm-package generated files
 elm-stuff
+
 # elm-repl generated files
 repl-temp-*
+
+# build files
+public/build/*
+!public/build/.gitkeep
+
+# obviously..
+node_modules/
+
+# custom ide config
+.vscode/

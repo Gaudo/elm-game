@@ -1,0 +1,26 @@
+{
+  "name": "card-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "elm make src/Main.elm --output public/build/app.js",
+    "watch": "chokidar \"src/**/*.elm\" -c \"elm make src/Main.elm --output public/build/app.js\" --initial"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaudo/card-game.git"
+  },
+  "author": "Francesco Gaudenzi",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Gaudo/card-game/issues"
+  },
+  "homepage": "https://github.com/Gaudo/card-game#readme",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
+    "elm-test": "^0.19.1-revision7"
+  }
+}
