@@ -33,8 +33,9 @@ const compileElm = (cb) => {
                 pure_getters: true,
                 keep_fargs: false,
                 unsafe_comps: true,
-                unsafe: true
-            }
+                unsafe: true,
+            },
+            mangle: false
         }))
         .pipe(uglify({
             mangle: true
