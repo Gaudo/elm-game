@@ -5,8 +5,7 @@ elm-stuff
 repl-temp-*
 
 # build files
-public/build/*
-!public/build/.gitkeep
+dist/
 
 # obviously..
 node_modules/

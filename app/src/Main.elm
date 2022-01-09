@@ -11,17 +11,17 @@ type alias Model =
 
 init : () -> ( Model, Cmd msg )
 init _ =
-    ( 6, Cmd.none )
+    ( 3, Cmd.none )
 
 
 update : any -> Model -> ( Model, Cmd any )
 update _ _ =
-    ( 2, Cmd.none )
+    ( 6, Cmd.none )
 
 
 view : Model -> Html msg
 view _ =
-    div [] [ text "csi5adso" ]
+    div [] [ text "Hello World" ]
 
 
 subscriptions : Model -> Sub any
