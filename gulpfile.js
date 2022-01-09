@@ -8,7 +8,7 @@ const browserSync = require('browser-sync').create();
 
 const compileSass = (cb) => {
     src('./app/scss/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(dest('./dist'))
         .on('end', () => cb());
 }
