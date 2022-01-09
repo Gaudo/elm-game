@@ -22,7 +22,6 @@ const copyIndex = (cb) => {
 const compileElm = (cb) => {
     src('./app/src/Main.elm')
         .pipe(elm({ optimize: true }))
-        .pipe(rename('app.js'))
         .pipe(uglify({
             compress: {
                 pure_funcs: [
@@ -40,6 +39,7 @@ const compileElm = (cb) => {
         .pipe(uglify({
             mangle: true
         }))
+        .pipe(rename('app.js'))
         .pipe(dest('./dist/'))
         .on('end', () => cb());
 };
